@@ -23,7 +23,7 @@ for cnpj in df_cnpjs["CNPJ"]:
     # Cria um novo objeto DataFrame chamado df_temp contendo duas colunas: "SKU", 
     # que recebe os valores da coluna "Cód. Item" do objeto DataFrame df_sku,
     # e "CPF/CNPJ", que recebe o valor da variável cnpj.
-    df_temp = pd.DataFrame({"SKU": df_sku["cod"], "CPF/CNPJ": cnpj}) 
+    df_temp = pd.DataFrame({"SKU": df_sku["Cod.Item"], "CPF/CNPJ": cnpj}) 
 
     # Adiciona as informações do objeto DataFrame df_temp ao final do objeto DataFrame df_combinado 
     # utilizando a função concat() da biblioteca Pandas. 
